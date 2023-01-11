@@ -1,9 +1,9 @@
-import { Numbers } from "./Number";
+import { Numbers } from "./number";
 import { Strings } from "./string";
 export class Arrays {
   constructor() {}
-  stringHelp: Strings = new Strings();
-  numberHelp: Numbers = new Numbers();
+  private readonly stringHelp: Strings = new Strings();
+  private readonly numberHelp: Numbers = new Numbers();
 
   /* Read */
 
@@ -13,7 +13,7 @@ export class Arrays {
 
   /**
      * @description
-     * get the bigger value of an array (longest string , greater number)
+     * get the bigger value of an array (longest string , greatest number)
      *@example
       biggerValue(['t' , 'te' , 'tes']) // {value : 'tes' , index : 2}
       biggerValue([1 , 3 , 5]) // {value : 5 , index : 2}
